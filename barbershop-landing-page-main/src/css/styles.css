@@ -1,0 +1,321 @@
+/* HEADER */
+
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 72px;
+    
+  }
+  
+  .titulo{
+    color: white;
+    font-family: "Spectral SC" ;
+    font-weight: 450;
+  }
+  
+  .texto_titulo{
+    color: white;
+    font-family: "Arbutus Slab";
+    font-weight: 300;
+    font-size: 1 px;
+    font-size: 160;
+  }
+  .cabecalho h1 a img {
+    width: 150px;
+  }
+
+  .nav a:nth-last-child(1):hover:after{
+    border-bottom: none;
+  }
+
+  .nav{
+    display: flex;
+    align-items: center;
+    padding: 5px 72px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+    
+    justify-content: space-between;
+    
+  }
+
+
+
+  .nav a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    
+  }
+
+  .nav a:hover{
+    border-bottom: 4px solid #FFBD12;
+    width: 50%;
+    
+  }
+
+.nav .botao-agendar-vermelho {
+    display: flex;
+    align-items: center;
+    background-color: #FFBD12;
+    border: #FFBD12;
+    color: var(--preto1);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+ 
+  
+  /* HERO */
+  
+  .hero {
+    background-image: url('../images/LandingIMG.png');
+    background-position: fixed;
+    background-size: cover;
+    height: 90%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#F4F2F0;
+    padding: 0px 72px;
+    max-width: 100%;
+  }
+  
+  .hero .hero-info {
+    color: var(--branco1);
+    max-width: 100%;
+    
+  }
+  
+  .hero .hero-info h2 {
+    font-size: 5.6rem;
+    width: 15ch;
+    line-height: 6rem;
+  }
+  
+  .hero .hero-info p {
+    font-size: 3rem;
+    margin-top: 15px;
+    width: 40ch;
+  }
+  
+  .hero .botao-agendar-vermelho {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    background-color: #FFBD12;
+    border: #FFBD12;
+    color: var(--branco1);
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 15px;
+
+  }
+  
+  .hero .botao-agendar-vermelho:hover {
+    background-color: #C78F00;
+  }
+  
+  .hero .botao-agendar-vermelho img {
+    margin-right: 20px;
+  }
+  
+  .hero .hero-image {
+    width: 50%;
+  }
+  
+  .hero .hero-image img {
+    max-width: 100%;
+  }
+  
+  /* SERVIÇOS */
+  
+  .nossos-servicos {
+    font-size: 2rem;
+    padding: 50px;
+    background-color: #F4F2F0;
+  }
+  
+  .nossos-servicos p {
+    color: #FFBD12;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nossos-servicos h2 {
+    font-size: 4rem;
+    margin-bottom: 32px;
+  }
+  
+  .servicos {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    height: 432px;
+  }
+  
+  .servicos .servico {
+    display: flex;
+    max-width: 60%;
+    height: 450px;
+    margin-right: 32px;
+   
+    background-color: var(--branco2);
+    opacity: 0;
+    position: absolute;
+    transition: 1s ease-in-out;
+  }
+  
+  .servicos .servico.mostrar {
+    opacity: 1;
+  }
+  
+  .servicos .servico img {
+    min-width: 70%;
+    max-height: 100%;
+  
+  }
+  
+  .servicos .servico .servico-info {
+    padding: 20px;
+    max-height: 100%;
+  }
+  
+  .servicos .servico .servico-info h3 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  
+  .servicos .servico .servico-info p {
+    font-size: 1.8rem;
+    color: var(--preto2);
+  }
+  
+  #seta-voltar,
+  #seta-avancar {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    color: #FFBD12;
+    top: 190px;
+  }
+  
+  #seta-voltar {
+    left: 15%;
+    transform: rotate(180deg);
+  }
+  
+  #seta-avancar {
+    right: 18%;
+  }
+  
+  .icone-seta {
+    font-size: 5rem;
+  }
+  
+  #seta-voltar.opacidade,
+  #seta-avancar.opacidade {
+    opacity: 0.4;
+    cursor: default;
+  }
+  
+  /* LOCALIZAÇÃO */
+  
+  .nossa-localizacao {
+    background-color: var(--branco2);
+  }
+  
+  .nossa-localizacao .nossa-localizacao-info {
+    padding: 50px;
+  }
+  
+  .nossa-localizacao p:first-child {
+    color: #FFBD12;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nossa-localizacao h2 {
+    font-size: 4rem;
+    margin-bottom: 32px;
+  }
+  
+  .nossa-localizacao p {
+    color: var(--preto1);
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nossa-localizacao p img {
+    margin-right: 20px;
+  }
+  
+  .nossa-localizacao .mapa {
+
+    margin-top: 20px;
+  }
+  
+  .nossa-localizacao .mapa iframe {
+    min-width: 100%;
+    border: 1px solid var(--preto2);
+  }
+  
+  /* RODAPÉ */
+  
+  .rodape {
+    background-color: var(--preto1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 72px;
+  }
+  
+  .rodape .rodape-info h2 img {
+    width: 150px;
+  }
+  
+  .rodape .rodape-info p {
+    color: var(--branco1);
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+
+  .rodape .redes-sociais a {
+    color: var(--branco1);
+    font-size: 4rem;
+    margin-left: 20px;
+  }
+  
+  .rodape .redes-sociais a:hover {
+    color: #FFBD12;
+  }
+
+  .rodape h2{
+    color: var(--branco1);
+    font-size: 50px;
+  }
+
+#teste {
+    margin-left: 0px;
+    margin-top: -10px;
+}
+
+#teste:hover {
+    border-bottom: none !important;
+}

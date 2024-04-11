@@ -1,0 +1,111 @@
+    <!DOCTYPE html>
+        <html lang="pt-br">
+        <head>
+            <meta charset="UTF-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Frioli Hair</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com" />
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+            <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+            />
+            <link rel="stylesheet" href="src/css/reset.css" />
+            <link rel="stylesheet" href="src/css/styles.css" />
+            <link rel="stylesheet" href="src/css/responsive.css" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <style>
+                
+                @import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+            </style>
+        </head>
+        <body>
+            <header class="cabecalho">
+                <h1>
+                    <a href="#">
+                        <img src="src/images/logo.png" alt="Logo Frioli Hair">
+                    </a>
+                </h1>
+                <nav class="nav">
+                    <a href="index.html" class="nav">Home</a>
+                    <p>|</p>
+                    <a href="agenda.html" class="nav">Horários</a>
+                    <p>|</p>
+                    <a onclick="scrollToContact()" class="nav">Contato</a>
+                    
+                    <a href="login.html" id="teste" class="cadastro">
+                        <button class="botao-agendar-vermelho" style="margin-top: 20px;">Login</button>
+                        </a>
+                </nav>
+                
+            
+            </header>
+            <main class="hero">
+                <div class="hero-info">
+                    <h2 class="titulo">Frioli Hair - Barber Shop</h2>
+                    <p class="texto_titulo">A Frioli hair surgiu com o objetivo de mudar a vida dos homens através de um simples corte de tesoura.</p>
+                    <a href="agenda.html">
+                    <button class="botao-agendar-vermelho">AGENDAR HORÁRIO</button>
+                    </a>
+                    
+                </div>
+            
+            </main>
+            <section class="nossos-servicos">
+                <p>NOSSOS SERVIÇOS</p>
+                <h2>Veja o que fazemos de melhor</h2>
+                <div class="servicos">
+                    <i id="seta-voltar" class="fas fa-chevron-right icone-seta opacidade"></i>
+                    <div class="servico mostrar">
+                        <img src="src/images/carrosel1.png" alt="Imagem Corte de Cabelo">
+                    
+                    </div>
+                    <div class="servico">
+                        <img src="src/images/carrosel2.png" alt="Imagem Barba Aparada">
+              
+                    </div>
+                    <div class="servico">
+                        <img src="src/images/carrosel3.png" alt="Imagem Lavagem">
+                       
+                    </div>
+                    <i id="seta-avancar" class="fas fa-chevron-right icone-seta"></i>
+                </div>
+            </section>
+            <section class="nossa-localizacao">
+                <div class="nossa-localizacao-info">
+                    <p>ONDE ESTAMOS</p>
+                    <h2>Venha nos fazer uma visita!</h2>
+                    <p><img src="src/images/location.svg" alt="Ícone de Localização">Rua do Retiro 253, Jundiaí, SP</p>
+                </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.8666011112086!2d-46.891739726981456!3d-23.189667350232096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf25d168b196cf%3A0xb4b31cd78303542d!2sBarbearia%20Frioli%20Hair!5e0!3m2!1spt-BR!2sbr!4v1712843698878!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </section>
+            <footer class="rodape">
+                <div id="contact" class="rodape-info">
+                    <h2>    
+                        <a href="#">
+                            <h2>Frioli Hair</h2>
+                        </a>
+                    </h2>
+                    <p>©2024 - Frioli Hair. Todos os direitos reservados.</p>
+                </div>
+                <div class="redes-sociais">
+                    <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </footer>
+            <script src="src/js/index.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>   
+            <script>
+                function scrollToContact() {
+                  document.getElementById("contact").scrollIntoView();
+                }
+              </script>
+        </body>
+        </html>

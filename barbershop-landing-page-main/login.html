@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Frioli Hair - Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../barbershop-landing-page-main/src/css/Cad_Log.css">
+</head>
+
+
+<body class="my-login-page">
+    <header class="cabecalho">
+        <h1>
+            <a href="#">
+                <img src="src/images/logo.png" alt="Logo Frioli Hair">
+            </a>
+        </h1>
+        <nav class="nav">
+            <a href="index.html" class="nav">Home</a>
+        </nav>
+        
+    
+    </header>
+    <section class="h-100">
+        <div class="container h-100">
+            <div class="row justify-content-md-center h-100">
+                <div class="card-wrapper">
+                    <div class="logo">
+                        	<img src="../barbershop-landing-page-main/src/images/LoginPLogo.png" alt="Frioli Logo">
+                    </div>
+                    <div class="card_fat">
+                        <div class="card-body">
+                            <h4 class="card-title">Login</h4>
+                            <form method="dialog" class="my-login-validation" novalidate="">
+                                <div class="form-group">
+								</div>
+                                
+                                <div class="form-group">
+                                    <label for="text">Email</label>
+                                    <input placeholder="exemplo@gmail.com" id="text" type="text" class="form-control" name="text" value="" required>
+                                    <div class="invalid-feedback">
+                                        Nome Invalido
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password">Senha</label>
+                                    <input id="password" type="password" class="form-control" name="password" required
+                                        data-eye>
+                                    <div class="invalid-feedback">
+                                        Senha é nescessaria
+                                    </div>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block" style="background-color: #F9B915;">
+                                    Login
+                                </button>
+                                <div class="link_cad">
+                                    <a href="cadastro.html">Não possui uma conta?</a>
+									<a href="login.html">Esqueceu a senha?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        Copyright &copy; 2024 &mdash; Frioli Hair
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+</body>
+
+</html>
